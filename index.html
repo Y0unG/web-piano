@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, World!</title>
+</head>
+<body>
+<div class="container">
+      <div class="white-keys">
+          <kbd>A</kbd>
+          <kbd>S</kbd>
+          <kbd>D</kbd>
+          <kbd>F</kbd>
+          <kbd>G</kbd>
+          <kbd>H</kbd>
+          <kbd>J</kbd>
+      </div>
+
+    <div class="black-keys">
+        <kbd>W</kbd>
+        <kbd>E</kbd>
+    </div>
+    <div class="black-keys">
+        <kbd>T</kbd>
+        <kbd>Y</kbd>
+        <kbd>U</kbd>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("keydown", function(e) {
+        if (e.code == "KeyA") {
+            let audio = new Audio("audios/A.mp3");
+            audio.play();
+        } else if (e.code == "KeyS"){
+            let audio = new Audio("audios/S.mp3");
+            audio.play();
+        } else if (e.code == "KeyD"){
+            let audio = new Audio("audios/D.mp3");
+            audio.play();
+        } else if (e.code == "KeyF"){
+            let audio = new Audio("audios/F.mp3");
+            audio.play();
+        } else if (e.code == "KeyG"){
+            let audio = new Audio("audios/G.mp3");
+            audio.play();
+        } else if (e.code == "KeyH"){
+            let audio = new Audio("audios/H.mp3");
+            audio.play();
+        } else if (e.code == "KeyJ"){
+            let audio = new Audio("audios/J.mp3");
+            audio.play();
+        } else if (e.code == "KeyW"){
+            let audio = new Audio("audios/.mp3");
+            audio.play();
+        } else if (e.code == "KeyE"){
+            let audio = new Audio("audios/E.mp3");
+            audio.play();
+        } else if (e.code == "KeyT"){
+            let audio = new Audio("audios/T.mp3");
+            audio.play();
+        } else if (e.code == "KeyY"){
+            let audio = new Audio("audios/Y.mp3");
+            audio.play();
+        } else if (e.code == "KeyU"){
+            let audio = new Audio("audios/U.mp3");
+            audio.play();
+        } else {
+            console.log("Warning! Wrong key has been pressed");
+        }
+    })
+</script>
+</body>
+</html>
